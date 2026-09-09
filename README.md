@@ -20,7 +20,7 @@ I specialize in designing low-latency backend architectures, building production
 
 My public repositories act as an integrated, multi-tier software ecosystem demonstrating end-to-end data systems engineering:
 
-'''
+---
 
 ┌─────────────────────────────────────────┐│        DATA SYSTEMS ECOSYSTEM           │└────────────────────┬────────────────────┘│┌─────────────────────────────┼─────────────────────────────┐▼                             ▼                             ▼┌───────────────┐             ┌───────────────┐             ┌───────────────┐│   INGESTION   │             │   ANALYTICS   │             │ CONCURRENCY & ││  & TELEMETRIA │             │  & SE-MANTICS │             │  CORE BACKEND │└───────┬───────┘             └───────┬───────┘             └───────┬───────┘│                             │                             │[Weather-ETL]               [FireApp / ML Engine]             [goTunes Engine]• REST API Payloads         • Multimodal Embeddings           • Real-Time Audio DSP• systemd Orchestration     • pgvector DB Spatial Search      • Bounded Floating Clocks• Idempotent SQLite         • 3D Vector Space (k-NN)          • Zero-Heap Benchmarks
 ---
