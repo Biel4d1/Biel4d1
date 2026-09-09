@@ -1,57 +1,271 @@
-# Hi, I'm Gabriel Querne! 👋
+Hi, I'm Gabriel Querne 👋
 
-### Data Science Student & Backend Infrastructure / Data Engineer
-I specialize in designing low-latency backend architectures, building production-grade data pipelines (ETL), and deploying asynchronous automated systems utilizing custom Generative AI frameworks, Vector Databases, and microservices.
+Data Science Student | Backend & Data Engineering | Go • Python • PostgreSQL • Linux
 
----
+I build backend systems, automated data pipelines, and data-driven applications, with a focus on reliability, concurrency, asynchronous processing, and practical infrastructure.
 
-## 🛠️ Technical Stack & Ecosystem
+My projects explore the intersection of Data Engineering, Backend Development, Machine Learning, and Linux automation — from real-time Go services and procedural audio DSP to multimodal recommendation pipelines and automated meteorological ETL.
 
-* **Languages:** Go (Golang), Python, SQL (PostgreSQL, SQLite3), Bash/Zsh
-* **Data Engineering:** Ingestion Pipelines, REST APIs, Semantic Vector Search, Event Synchronization
-* **Infrastructure & Automation:** Linux (Arch), Native Orchestration (systemd Services/Timers), Docker & Compose, Git/SSH
-* **Asynchronous Architectures:** Message queues, background workers, and atomic caching via Redis
-* **Data Analytics:** Power BI (Desktop/Services), Advanced DAX Functions, Star Schema Modeling
-* **Languages:** Fluent English (Proficient in technical documentation) | Portuguese (Native)
+Currently focused on Go, Python, PostgreSQL, Redis, Docker, Linux infrastructure, and applied AI systems.
 
 ---
 
-## 🚀 Architectural Breakdown & Ecosystem Hub
+🛠️ Technical Stack
 
-My public repositories act as an integrated, multi-tier software ecosystem demonstrating end-to-end data systems engineering:
+Languages
+
+- Go (Golang)
+- Python
+- SQL
+- Bash / Zsh
+
+Backend & Data
+
+- REST APIs
+- PostgreSQL / pgvector
+- SQLite
+- Redis
+- ETL / ELT pipelines
+- Background workers & message queues
+- Semantic vector search
+- Data ingestion and transformation
+
+Infrastructure
+
+- Linux (Arch Linux)
+- Docker & Docker Compose
+- systemd services & timers
+- Git / GitHub
+- SSH
+- Automated service orchestration
+
+Machine Learning & AI
+
+- Scikit-learn
+- CLIP multimodal embeddings
+- Audio Spectrogram Transformer (AST)
+- k-Nearest Neighbors
+- Vector similarity search
+- Recommendation systems
+- Generative AI workflows
+
+Analytics
+
+- Power BI Desktop / Service
+- DAX
+- Star Schema modeling
+- Data transformation
+
+Languages
+
+- 🇧🇷 Portuguese — Native
+- 🇬🇧 English — Fluent, including technical documentation
 
 ---
 
-┌─────────────────────────────────────────┐│        DATA SYSTEMS ECOSYSTEM           │└────────────────────┬────────────────────┘│┌─────────────────────────────┼─────────────────────────────┐▼                             ▼                             ▼┌───────────────┐             ┌───────────────┐             ┌───────────────┐│   INGESTION   │             │   ANALYTICS   │             │ CONCURRENCY & ││  & TELEMETRIA │             │  & SE-MANTICS │             │  CORE BACKEND │└───────┬───────┘             └───────┬───────┘             └───────┬───────┘│                             │                             │[Weather-ETL]               [FireApp / ML Engine]             [goTunes Engine]• REST API Payloads         • Multimodal Embeddings           • Real-Time Audio DSP• systemd Orchestration     • pgvector DB Spatial Search      • Bounded Floating Clocks• Idempotent SQLite         • 3D Vector Space (k-NN)          • Zero-Heap Benchmarks
+🚀 Featured Engineering Projects
+
+🔥 "FireApp / SmartVideos" (https://github.com/Biel4d1/FireApp)
+
+Polyglot Backend & Multimodal Recommendation Pipeline
+
+A video platform backend combining a high-throughput Go/Gin API with asynchronous Python machine-learning workers.
+
+Architecture
+
+- Go REST API for application and backend services
+- PostgreSQL + "pgvector" for persistent vector storage
+- Redis-backed asynchronous task processing
+- Python ML workers for media analysis
+- Docker Compose for multi-service orchestration
+
+Machine Learning Pipeline
+
+- Generates 512-dimensional CLIP embeddings using "clip-vit-base-patch32"
+- Extracts audio information using Audio Spectrogram Transformer (AST)
+- Stores semantic representations in PostgreSQL
+- Performs vector similarity retrieval for recommendation and discovery
+
+Engineering focus:
+"Go" · "Python" · "PostgreSQL" · "pgvector" · "Redis" · "Docker" · "ML Pipelines" · "Vector Search"
+
 ---
 
-## 📁 Pinned Production-Ready Repositories
+🎵 "goTunes" (https://github.com/Biel4d1/goTunes)
 
-### 🔥 [FireApp (SmartVideos) — Polyglot Microservices & AI Pipeline](https://github.com/Biel4d1/FireApp)
-* **The System:** A polyglot backend combining a high-throughput **Go (Gin)** API engine with asynchronous **Python** deep learning workers.
-* **The AI Stack:** Processes raw media assets to generate 512-dimensional multimodal **CLIP embeddings** (`clip-vit-base-patch32`) and Audio Spectrogram Transformer (AST) tags, utilizing **PostgreSQL (`pgvector`)** for semantic recommendations.
-* **The Architecture:** Leverages **Redis (RQ Engine)** background queues to ensure non-blocking threads, alongside custom containerization layers built with **Docker Compose**.
+Real-Time Procedural Audio Synthesis Engine in Go
 
-### 🎵 [goTunes — Real-Time Procedural Synthesis Engine](https://github.com/Biel4d1/goTunes)
-* **The System:** A low-latency, real-time procedural audio synthesis backend written natively in **Go** using ebitengine/oto/v3.
-* **The Engineering:** Implements strict multi-threaded concurrent state management over custom HTTP REST endpoints, utilizing bounded modulo arithmetic (`math.Mod`) to eliminate floating-point counter drift during long-running streaming cycles. Focuses heavily on optimized **zero-heap allocation** benchmarks to avoid Garbage Collector spikes.
+A real-time procedural music engine written in Go, generating continuous synthesized audio without relying on prerecorded PCM samples.
 
-### 🌦️ [Localized Meteorological ETL Pipeline](https://github.com/Biel4d1/Weather-Pipeline)
-* **The System:** An automated, production-grade data pipeline designed to pull, sanitize, and transform real-time JSON telemetry payloads from external REST APIs.
-* **The Automation:** Bypasses heavy framework layers by implementing lightweight **Python (Pandas)** ingestion modules handled entirely through native **Linux `systemd` timers** and persistent, idempotent **SQLite3** engines (`INSERT OR IGNORE`).
+Built around "ebitengine/oto/v3", the engine explores low-latency DSP, deterministic sequencing, concurrency, and long-running audio generation.
 
-### 📐 [Music Emotion Engine & Recommendation Pipeline](https://github.com/Biel4d1/music-recommendation-pipeline)
-* **The System:** An end-to-end Machine Learning data engine implementing spatial inference math.
-* **The Mathematics:** Maps audio data onto the Russell Circumplex Model of Affect, applying `MinMaxScaler` normalization to execute **k-Nearest Neighbors (k-NN)** spatial classification using geometric Euclidean distances inside a 3D vector space.
+Technical highlights
 
-### 💼 [Family Finance Ledger — Desktop & Local-First Full-Stack](https://github.com/Biel4d1/family-finance)
-* **The System:** A full-stack application bundling desktop client layers and web server logic.
-* **The Architecture:** Built with a **Go** business logic layer connected to a **PostgreSQL** relational database engine, exposed as a native Linux/desktop GUI utilizing the **Wails v2** framework shell.
+- Real-time procedural audio synthesis
+- Concurrent shared-state management
+- HTTP control endpoints
+- Multi-oscillator synthesis
+- Procedural harmonic and rhythmic generation
+- Bounded floating-point clocks using modulo arithmetic
+- Allocation and latency benchmarking for real-time execution
+
+Engineering focus:
+"Go" · "Concurrency" · "DSP" · "Real-Time Systems" · "Performance Engineering"
 
 ---
 
-## 🎯 Current Target & Availability
-* **Core Focus:** Scaling automated corporate workflows through structured **Generative AI & Advanced Prompt Engineering**.
-* **Availability:** Full flexibility for hybrid or on-site routines in Rio das Ostras, Macaé, and neighboring operations right away.
+🌦️ "Localized Meteorological ETL Pipeline" (https://github.com/Biel4d1/Weather-Pipeline)
 
-📬 **Connect with me:** [LinkedIn](https://www.linkedin.com/in/gabriel-querne-a9363941b)
+Automated Weather Data Ingestion & Transformation
+
+A lightweight ETL pipeline for continuously collecting, validating, transforming, and storing meteorological telemetry from external REST APIs.
+
+Rather than relying on a large orchestration framework, execution is handled directly by Linux systemd services and timers.
+
+Pipeline
+
+External REST API
+        │
+        ▼
+ JSON Telemetry
+        │
+        ▼
+Python / Pandas
+        │
+   Validation
+   Cleaning
+   Transformation
+        │
+        ▼
+     SQLite
+        │
+  Idempotent Writes
+        │
+        ▼
+ Historical Dataset
+
+Technical highlights
+
+- Automated API ingestion
+- Structured JSON transformation
+- Idempotent persistence with "INSERT OR IGNORE"
+- Persistent historical datasets
+- systemd-based scheduling and orchestration
+- Lightweight deployment without external workflow engines
+
+Engineering focus:
+"Python" · "Pandas" · "SQLite" · "REST APIs" · "ETL" · "Linux" · "systemd"
+
+---
+
+📐 "Music Emotion Engine" (https://github.com/Biel4d1/music-recommendation-pipeline)
+
+Emotion-Aware Recommendation & Spatial Inference Pipeline
+
+A machine-learning pipeline that represents music in a multidimensional emotional space based on the Russell Circumplex Model of Affect.
+
+Audio characteristics are normalized and mapped into a three-dimensional feature space, where k-Nearest Neighbors and Euclidean distance are used for similarity-based classification and recommendation.
+
+Audio Features
+      │
+      ▼
+Data Transformation
+      │
+      ▼
+ MinMaxScaler
+      │
+      ▼
+3D Emotional Vector Space
+      │
+      ▼
+ Euclidean Distance
+      │
+      ▼
+     k-NN
+      │
+      ▼
+Emotion / Similarity Results
+
+Engineering focus:
+"Python" · "Scikit-learn" · "Feature Engineering" · "k-NN" · "Data Pipelines"
+
+---
+
+💼 "Family Finance Ledger" (https://github.com/Biel4d1/family-finance)
+
+Local-First Desktop Financial Management System
+
+A full-stack financial tracking application built around a Go business-logic layer and relational PostgreSQL persistence.
+
+The application uses Wails v2 to expose Go backend functionality through a native desktop interface.
+
+Technical highlights
+
+- Go application/service layer
+- PostgreSQL relational persistence
+- Income and expense tracking
+- Financial aggregation and calculations
+- Local-first architecture
+- Native desktop integration with Wails
+
+Engineering focus:
+"Go" · "PostgreSQL" · "Wails" · "SQL" · "Desktop Applications"
+
+---
+
+🏗️ Engineering Ecosystem
+
+                    ┌──────────────────────────┐
+                    │   DATA & BACKEND SYSTEMS │
+                    └────────────┬─────────────┘
+                                 │
+          ┌──────────────────────┼──────────────────────┐
+          │                      │                      │
+          ▼                      ▼                      ▼
+ ┌────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+ │ DATA PIPELINES │    │ AI & ANALYTICS  │    │ BACKEND SYSTEMS │
+ └───────┬────────┘    └────────┬────────┘    └────────┬────────┘
+         │                      │                      │
+         ▼                      ▼                      ▼
+ Weather Pipeline           FireApp                goTunes
+ Python / Pandas        CLIP / AST / pgvector     Go / DSP
+ systemd / SQLite       Redis / PostgreSQL        Concurrency
+
+         │                      │                      │
+         └──────────────────────┼──────────────────────┘
+                                ▼
+                     ┌────────────────────┐
+                     │ APPLIED SYSTEMS    │
+                     └─────────┬──────────┘
+                               │
+                    ┌──────────┴──────────┐
+                    ▼                     ▼
+            Music Emotion Engine    Family Finance
+              ML / k-NN / Math      Go / PostgreSQL
+
+---
+
+🎯 What I'm Looking For
+
+I'm currently interested in opportunities involving:
+
+- Data Engineering
+- Backend Development
+- Data Science / Applied Machine Learning
+- Infrastructure & Automation
+- AI-assisted workflow automation
+
+I particularly enjoy engineering problems involving data movement, concurrency, automation, system architecture, recommendation systems, and performance optimization.
+
+📍 Available for hybrid or on-site opportunities in Rio das Ostras, Macaé, and nearby regions in Rio de Janeiro, Brazil.
+
+---
+
+📫 Connect
+
+LinkedIn: "linkedin.com/in/gabriel-querne-a9363941b" (https://www.linkedin.com/in/gabriel-querne-a9363941b/)
+GitHub: "github.com/Biel4d1" (https://github.com/Biel4d1)
+
+---
+
+«Building systems is how I learn: design the architecture, implement it, measure it, break it, and improve it.»
