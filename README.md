@@ -264,7 +264,7 @@ I particularly enjoy engineering problems involving data movement, concurrency, 
 📫 Connect
 
 LinkedIn: "linkedin.com/in/gabriel-querne-a9363941b" (https://www.linkedin.com/in/gabriel-querne-a9363941b/)
-GitHub: "github.com/Biel4d1" (https://github.com/Biel4d1)
+GitHub:(https://github.com/Biel4d1)
 
 ---
 
